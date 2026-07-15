@@ -1,0 +1,88 @@
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Page */
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: white;
+    color: #222;
+}
+
+/* Main container */
+main {
+    width: 430px;
+    margin: 20px auto;
+}
+
+/* Header */
+header {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 12px;
+    font-size: 1rem;
+    margin: 20px auto;
+    width: 430px;
+}
+
+/* Temple title */
+h1 {
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 15px;
+}
+
+/* Image */
+picture img {
+    width: 100%;
+    display: block;
+    box-shadow: 0 8px 18px rgba(0, 0, 0, .45);
+    margin-bottom: 18px;
+}
+
+/* Sections */
+section {
+    background: #e5e5e5;
+    padding: 15px;
+    margin-bottom: 15px;
+}
+
+section h2 {
+    font-size: 1.3rem;
+    margin-bottom: 10px;
+    border-bottom: 1px solid #999;
+    padding-bottom: 6px;
+}
+
+section p,
+section li {
+    font-size: .9rem;
+    line-height: 1.6;
+}
+
+ul {
+    padding-left: 18px;
+}
+
+/* Links */
+a {
+    color: blue;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Footer */
+footer {
+    width: 430px;
+    margin: 10px auto 30px;
+    background: #333;
+    color: white;
+    text-align: center;
+    padding: 12px;
+}

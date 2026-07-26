@@ -1,3 +1,32 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+:root {
+    --primary-color: #0B5D71;
+    --secondary-color: #F2A541;
+    --accent1-color: #14364A;
+    --accent2-color: #EAF7F8;
+}
+
+.hero-welcome {
+    position: absolute;
+    top: 120px;
+    left: 0;
+    width: 100%;
+    text-align: center;
+    color: white;
+    font-size: 1.2rem;
+    font-weight: 500;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, .8);
+}
+
 /* =========================
    HEADER
 ========================= */
@@ -310,6 +339,183 @@ footer {
     line-height: 1.5;
 }
 
+/* =========================
+   HERO SMALL (Trips page banner)
+========================= */
+
+.hero-small h1 {
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+/* =========================
+   NEWSLETTER (Home page)
+========================= */
+
+.newsletter {
+    max-width: 1200px;
+    margin: 40px auto;
+    background-color: #d8c8f3;
+    border: 1px solid #999;
+    padding: 20px;
+    text-align: center;
+}
+
+.newsletter h2 {
+    margin-bottom: 20px;
+}
+
+.newsletter form {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: end;
+    gap: 20px;
+}
+
+.newsletter label {
+    display: block;
+    font-weight: bold;
+    text-align: left;
+    margin-bottom: 6px;
+}
+
+.newsletter input {
+    padding: 10px;
+    border: 1px solid #999;
+    border-radius: 4px;
+    font-size: 1rem;
+    min-width: 220px;
+}
+
+/* =========================
+   BUTTON (shared: newsletter, CTA)
+========================= */
+
+.newsletter button,
+.button {
+    background-color: var(--primary-color);
+    color: white;
+    border: none;
+    padding: 12px 22px;
+    font-size: 1rem;
+    cursor: pointer;
+    border-radius: 5px;
+    text-decoration: none;
+    display: inline-block;
+}
+
+.newsletter button:hover,
+.button:hover {
+    background-color: var(--accent1-color);
+}
+
+/* =========================
+   CALL TO ACTION (Home & Trips)
+========================= */
+
+.cta {
+    max-width: 1200px;
+    margin: 40px auto;
+    background-color: var(--primary-color);
+    color: white;
+    text-align: center;
+    padding: 30px 20px;
+    border-radius: 5px;
+}
+
+.cta p {
+    color: white;
+    max-width: 600px;
+    margin: 0 auto 15px;
+    line-height: 1.6;
+}
+
+.cta .button {
+    background-color: var(--secondary-color);
+}
+
+.cta .button:hover {
+    background-color: white;
+    color: var(--primary-color);
+}
+
+/* =========================
+   INTRO GRID (Home page, two-column)
+========================= */
+
+.intro-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+    align-items: center;
+    max-width: 1200px;
+    margin: 40px auto;
+}
+
+.intro-grid img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+
+/* =========================
+   TRIP ROWS (Trips page)
+========================= */
+
+.trip {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    max-width: 1200px;
+    margin: 40px auto;
+}
+
+.trip img {
+    width: 45%;
+    border-radius: 5px;
+    flex-shrink: 0;
+}
+
+.trip-text {
+    flex: 1;
+}
+
+.trip-reverse {
+    flex-direction: row-reverse;
+}
+
+/* =========================
+   TRIPS TABLE
+========================= */
+
+.trips-table {
+    max-width: 1200px;
+    margin: 40px auto;
+}
+
+.trips-table h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.trips-table table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.trips-table th,
+.trips-table td {
+    text-align: left;
+    padding: 12px;
+    border: 1px solid #999;
+}
+
+.trips-table th {
+    background-color: var(--primary-color);
+    color: white;
+}
+
 /* Responsive Layout */
 
 @media (max-width: 768px) {
@@ -337,5 +543,22 @@ footer {
     nav {
         flex-direction: column;
         gap: 15px;
+    }
+
+    .intro-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .trip,
+    .trip-reverse {
+        flex-direction: column;
+    }
+
+    .trip img {
+        width: 100%;
+    }
+
+    .trips-table {
+        overflow-x: auto;
     }
 }

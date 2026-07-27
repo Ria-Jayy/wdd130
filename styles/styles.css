@@ -1,37 +1,90 @@
+/* ------------------------------
+   Global Styles
+------------------------------ */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 body {
     font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: #ffffff;
 }
+
+/* ------------------------------
+   Header
+------------------------------ */
+
+header {
+    background-color: #0b5d71;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+h1 {
+    font-size: 2rem;
+}
+
+/* ------------------------------
+   Main Content
+------------------------------ */
 
 main {
     max-width: 840px;
+    margin: 30px auto;
+    padding: 20px;
+}
+
+main h2 {
+    margin-bottom: 15px;
 }
 
 main img {
     width: 150px;
     height: auto;
+    display: block;
+    margin-bottom: 20px;
 }
 
+main p {
+    margin-bottom: 20px;
+}
+
+/* ------------------------------
+   Aside
+------------------------------ */
+
 aside {
-    width: 20rem;
-    margin: 1rem;
-    border: 1px solid rgb(0 0 0 / 0.2);
-    padding: 1rem;
+    width: 320px;
+    margin: 30px auto;
+    padding: 20px;
+    border: 1px solid rgba(0, 0, 0, 0.2);
     background-color: #eeeeee;
-    color: #333;
     text-align: center;
+}
+
+aside h2 {
+    margin-bottom: 15px;
 }
 
 aside img {
     width: 200px;
     height: auto;
+    margin-bottom: 15px;
 }
 
-p {
-    padding: 0;
-}
+/* ------------------------------
+   Footer
+------------------------------ */
 
 footer {
-    margin-top: 15px;
+    margin-top: 30px;
+    padding: 20px;
     border-top: 1px solid #000;
     text-align: center;
 }

@@ -1,4 +1,4 @@
-/* Universal selector */
+/* Universal Selector */
 * {
     margin: 0;
     padding: 0;
@@ -13,16 +13,23 @@ body {
     margin: 20px;
 }
 
-/* Header and navigation */
+/* Header */
 header {
     background-color: #17365d;
     padding: 20px;
 }
 
+/* Navigation */
+nav {
+    background-color: #17365d;
+    padding: 15px;
+}
+
 nav a {
     color: white;
     text-decoration: none;
-    margin-right: 25px;
+    padding: 10px;
+    display: block;
     font-weight: bold;
 }
 
@@ -30,24 +37,30 @@ nav a:hover {
     color: #f4b400;
 }
 
-/* Main content */
+/* Main Content */
 main {
     max-width: 840px;
     margin: 20px auto;
 }
 
+/* Main Heading */
 h1 {
     color: #17365d;
     margin-bottom: 20px;
 }
 
+/* Profile Image */
 main img {
     width: 150px;
     height: auto;
+    border: 1px solid #333;
+    padding: 2px;
+    box-shadow: 0 0 10px gray;
     float: right;
     margin: 0 0 15px 15px;
 }
 
+/* Paragraph */
 p {
     padding: 0;
     line-height: 1.6;
@@ -55,8 +68,8 @@ p {
 
 /* Aside */
 aside {
-    width: 20rem;
-    margin: 1rem auto;
+    width: 25rem;
+    margin: 1rem;
     border: 1px solid rgb(0 0 0 / 0.2);
     padding: 1rem;
     background-color: #eee;
@@ -64,10 +77,12 @@ aside {
     text-align: center;
 }
 
+/* Aside Heading */
 aside h2 {
     margin-bottom: 15px;
 }
 
+/* Aside Image */
 aside img {
     width: 200px;
     height: auto;

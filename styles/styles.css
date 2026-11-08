@@ -1,27 +1,33 @@
-/* General page styling */
-body {
-    font-family: Arial, sans-serif;
+/* Universal selector */
+* {
     margin: 0;
-    padding: 20px;
-    background-color: #f5f5f5;
-    color: #333;
+    padding: 0;
+    box-sizing: border-box;
 }
 
-/* Navigation */
-nav {
-    background-color: #333;
-    padding: 15px;
+/* Body */
+body {
+    font-family: Arial, sans-serif;
+    color: #333;
+    background-color: #f4f6f8;
+    margin: 20px;
+}
+
+/* Header and navigation */
+header {
+    background-color: #17365d;
+    padding: 20px;
 }
 
 nav a {
     color: white;
     text-decoration: none;
-    margin-right: 20px;
+    margin-right: 25px;
     font-weight: bold;
 }
 
 nav a:hover {
-    color: orange;
+    color: #f4b400;
 }
 
 /* Main content */
@@ -30,28 +36,36 @@ main {
     margin: 20px auto;
 }
 
+h1 {
+    color: #17365d;
+    margin-bottom: 20px;
+}
+
 main img {
     width: 150px;
     height: auto;
     float: right;
-    margin-left: 15px;
+    margin: 0 0 15px 15px;
 }
 
-/* Paragraph styling */
 p {
     padding: 0;
     line-height: 1.6;
 }
 
-/* Aside section */
+/* Aside */
 aside {
     width: 20rem;
-    margin: 1rem;
+    margin: 1rem auto;
     border: 1px solid rgb(0 0 0 / 0.2);
     padding: 1rem;
     background-color: #eee;
     color: #333;
     text-align: center;
+}
+
+aside h2 {
+    margin-bottom: 15px;
 }
 
 aside img {

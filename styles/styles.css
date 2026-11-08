@@ -1,76 +1,4 @@
-/* Universal Selector */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-/* Body */
-body {
-    font-family: Arial, sans-serif;
-    color: #333;
-    background-color: #f4f6f8;
-    margin: 20px;
-}
-
-/* Header */
-header {
-    background-color: #17365d;
-    padding: 20px;
-}
-
-/* Navigation */
-nav {
-    background-color: #17365d;
-    padding: 15px;
-    display: flex;
-    align-items: center;
-    gap: 20px;
-}
-
-nav a {
-    color: white;
-    text-decoration: none;
-    padding: 10px;
-    display: block;
-    font-weight: bold;
-}
-
-nav a:hover {
-    color: #f4b400;
-}
-
-/* Main Content */
-main {
-    max-width: 840px;
-    margin: 20px auto;
-}
-
-/* Main Heading */
-h1 {
-    color: #17365d;
-    margin-bottom: 20px;
-}
-
-/* Profile Image */
-main img {
-    width: 150px;
-    height: auto;
-    border: 1px solid #333;
-    padding: 2px;
-    box-shadow: 0 0 10px gray;
-    float: right;
-    margin: 0 0 15px 15px;
-}
-
-/* Paragraph */
-p {
-    padding: 0;
-    line-height: 1.6;
-}
-
-/* Aside */
-/* Aside - Nigeria Section */
+/* Nigeria Section */
 aside {
     width: 100%;
     margin: 1rem 0;
@@ -78,23 +6,24 @@ aside {
     padding: 2rem;
     background-color: #eee;
     color: #333;
-    text-align: center;
+    text-align: left;
 }
 
+/* Nigeria Heading */
 aside h2 {
+    text-align: center;
     margin-bottom: 15px;
 }
 
+/* Nigeria Image */
 aside img {
+    display: block;
     width: 200px;
     height: auto;
+    margin: 0 auto 15px;
 }
 
-/* Footer */
-footer {
-    margin-top: 15px;
-    border-top: 1px solid #000;
-    text-align: center;
-    padding-top: 10px;
-    clear: both;
+/* Nigeria Description */
+aside p {
+    text-align: left;
 }

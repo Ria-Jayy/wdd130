@@ -133,13 +133,11 @@ aside {
 
     margin: 1rem 0;
     border: 1px solid rgb(0 0 0 / 0.2);
+    padding: 1rem;
 
-    padding: 2rem;
-
-    background-color: #eeeeee;
-    color: #333333;
-
-    text-align: left;
+    background-color: #eee;
+    color: #333;
+    text-align: center;
 }
 
 /* Nigeria Heading */
@@ -155,9 +153,8 @@ aside h2 {
 aside img {
     display: block;
     width: 200px;
-    max-width: 100%;
     height: auto;
-
+    max-width: 100%;
     margin: 0 auto 15px;
 }
 
@@ -174,13 +171,9 @@ aside p {
 
 footer {
     margin-top: 15px;
-
-    border-top: 1px solid #17365d;
-
+    border-top: 1px solid #000;
     text-align: center;
     padding: 15px;
-
-    background-color: #f4f6f8;
 }
 
 footer p {

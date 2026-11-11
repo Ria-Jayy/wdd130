@@ -70,8 +70,11 @@ header {
 }
 
 header > img {
-    width: 120px;
+    display: block;
+    width: 150px;
     height: auto;
+    max-height: 120px;
+    object-fit: contain;
 }
 
 /* =========================
@@ -112,7 +115,7 @@ header nav a:hover {
     height: auto;
 }
 
-/* HERO HEADING */
+/* Hero Heading */
 
 .hero h1 {
     position: absolute;
@@ -126,7 +129,7 @@ header nav a:hover {
     background-color: rgba(20, 54, 74, 0.80);
 }
 
-/* COMPANY NAME */
+/* Company Name */
 
 .hero .company-name {
     position: absolute;
@@ -141,7 +144,7 @@ header nav a:hover {
     text-shadow: 2px 2px 4px #000000;
 }
 
-/* HERO ARTICLE */
+/* Hero Article */
 
 .hero article {
     position: absolute;
@@ -192,7 +195,9 @@ header nav a:hover {
 }
 
 .student-profile p {
-    line-height: 1.7;
+    max-width: 800px;
+    margin: 0 auto;
+    line-height: 1.8;
 }
 
 /* =========================
@@ -249,7 +254,7 @@ footer p {
     margin: 10px;
 }
 
-/* SOCIAL MEDIA */
+/* Social Media */
 
 .socialmedia {
     display: flex;
@@ -283,6 +288,7 @@ footer p {
     header nav {
         justify-content: center;
         flex-wrap: wrap;
+        gap: 10px;
     }
 
     .hero h1 {

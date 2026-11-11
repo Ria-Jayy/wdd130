@@ -1,111 +1,228 @@
-/* Universal Selector */
+/* =========================
+   UNIVERSAL SELECTOR
+========================= */
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-/* Body */
+/* =========================
+   BODY
+========================= */
+
 body {
-    font-family: Arial, sans-serif;
-    color: #333;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #333333;
     background-color: #f4f6f8;
-    margin: 20px;
+    margin: 0;
+    line-height: 1.6;
 }
 
-/* Header */
+/* =========================
+   PAGE WIDTH AND ALIGNMENT
+========================= */
+
+header,
+.grid,
+footer {
+    max-width: 840px;
+    margin: 0 auto;
+}
+
+/* =========================
+   HEADER
+========================= */
+
 header {
     background-color: #17365d;
-    padding: 20px;
 }
 
-/* Navigation */
+/* =========================
+   NAVIGATION - FLEXBOX
+========================= */
+
 nav {
     background-color: #17365d;
-    padding: 15px;
+    padding: 1rem;
+
     display: flex;
+    justify-content: space-evenly;
     align-items: center;
-    gap: 20px;
 }
 
 nav a {
-    color: white;
-    text-decoration: none;
-    padding: 10px;
     display: block;
-    font-weight: bold;
+    padding: 0.5rem;
+
+    text-decoration: none;
+    font-size: 1.2rem;
+    font-weight: 700;
+    color: #ffffff;
 }
 
 nav a:hover {
     color: #f4b400;
 }
 
-/* Main Content */
-main {
-    max-width: 840px;
-    margin: 20px auto;
-}
+/* =========================
+   MAIN HEADING
+========================= */
 
-/* Main Heading */
 h1 {
     color: #17365d;
     margin-bottom: 20px;
+    padding-bottom: 10px;
+    border-bottom: 2px solid #17365d;
+}
+
+/* =========================
+   CSS GRID LAYOUT
+========================= */
+
+.grid {
+    display: grid;
+
+    grid-template-columns: 20rem 1fr;
+
+    align-items: center;
+    gap: 1rem;
+}
+
+/* =========================
+   MAIN CONTENT
+========================= */
+
+main {
+    grid-column: 2/3;
+    margin: 1rem;
 }
 
 /* Profile Image */
+
 main img {
     width: 150px;
     height: auto;
-    border: 1px solid #333;
+
+    border: 1px solid #333333;
     padding: 2px;
+
     box-shadow: 0 0 10px gray;
+
     float: right;
     margin: 0 0 15px 15px;
 }
 
-/* Paragraph */
-p {
-    padding: 0;
+/* Main Paragraph */
+
+main p {
     line-height: 1.6;
 }
 
-/* Aside */
-/* Aside - Nigeria Section */
-/* Nigeria Section */
+/* =========================
+   ASIDE - NIGERIA SECTION
+========================= */
+
 aside {
-    width: 100%;
+    width: 20rem;
+    position: relative;
+
+    grid-column: 1/2;
+    grid-row: 1/2;
+
     margin: 1rem 0;
     border: 1px solid rgb(0 0 0 / 0.2);
+
     padding: 2rem;
-    background-color: #eee;
-    color: #333;
+
+    background-color: #eeeeee;
+    color: #333333;
+
     text-align: left;
 }
 
 /* Nigeria Heading */
+
 aside h2 {
     text-align: center;
     margin-bottom: 15px;
+    color: #17365d;
 }
 
 /* Nigeria Image */
+
 aside img {
     display: block;
     width: 200px;
+    max-width: 100%;
     height: auto;
+
     margin: 0 auto 15px;
 }
 
 /* Nigeria Description */
+
 aside p {
     text-align: left;
+    line-height: 1.6;
 }
 
-/* Footer */
+/* =========================
+   FOOTER
+========================= */
+
 footer {
     margin-top: 15px;
-    border-top: 1px solid #000;
+
+    border-top: 1px solid #17365d;
+
     text-align: center;
-    padding-top: 10px;
-    clear: both;
+    padding: 15px;
+
+    background-color: #f4f6f8;
+}
+
+footer p {
+    line-height: 1.6;
+}
+
+/* =========================
+   RESPONSIVE DESIGN
+========================= */
+
+@media screen and (max-width: 700px) {
+
+    nav {
+        flex-wrap: wrap;
+        gap: 10px;
+    }
+
+    nav a {
+        font-size: 1rem;
+    }
+
+    .grid {
+        grid-template-columns: 1fr;
+        gap: 0;
+    }
+
+    main {
+        grid-column: 1/2;
+        grid-row: auto;
+        margin: 1rem;
+    }
+
+    aside {
+        grid-column: 1/2;
+        grid-row: auto;
+
+        width: auto;
+        margin: 1rem;
+    }
+
+    main img {
+        width: 120px;
+    }
+
 }
